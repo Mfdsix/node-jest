@@ -23,5 +23,5 @@ const isStudentPassExam = (valuesExam, name) => {
 }
 
 module.exports = {
-    averageExams, isStudentPassExam
+    averageExams, isStudentPassExam, ValidationError
 }
