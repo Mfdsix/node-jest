@@ -15,7 +15,7 @@ const averageExams = (valuesExam) => {
     return (sumValues != 0 && valuesExam.length > 0) ? sumValues / valuesExam.length : 0
 }
 
-const isStudentPassExam = (valuesExam, name) => {
+const isStudentPassExam = (name, valuesExam) => {
     const minValues = 75
     const average = averageExams(valuesExam)
 

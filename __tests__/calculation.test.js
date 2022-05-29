@@ -34,3 +34,16 @@ describe("Average Calculation Test", () => {
         expect(averageExams(values)).toEqual(77.5)
     })
 })
+
+describe("Exam Pass Test", () => {
+    test("Not Pass", () => {
+        const name = "Ma Puth"
+        const values = [50, 70, 100, 20]
+        expect(isStudentPassExam(name, values)).toEqual(false)
+    })
+    test("Pass", () => {
+        const name = "Ma Puth"
+        const values = [50, 70, 100, 90]
+        expect(isStudentPassExam(name, values)).toEqual(true)
+    })
+})
